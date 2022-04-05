@@ -26,5 +26,5 @@ void printAddress(){
 }
 
 int getNumberOfDevices(){
-	return numberOfDevices
+	return numberOfDevices;
 }
