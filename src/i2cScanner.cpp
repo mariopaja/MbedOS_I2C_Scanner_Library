@@ -23,6 +23,7 @@ void i2cScanner::printAddress(){
 	if(!found){
 		printf("No device found");
 	}
+	//
 }
 
 int i2cScanner::getNumberOfDevices(){
