@@ -14,7 +14,7 @@ i2cScanner::i2cScanner(I2C& busI2C) {
 void i2cScanner::printAddress(){
 	for (int address = 0; address < 127; address++)
 	{
-		if (!i2c.write(address << 1, NULL, 0)){ // 0 returned is ok
+		if (!_I2C->write(address << 1, NULL, 0)){ // 0 returned is ok
 			printf("I2C device found at address 0x%02X (0x%02X in 8-bit)\n", address, address << 1);
 			numberOfDevices++;
 			found = true;
