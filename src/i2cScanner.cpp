@@ -16,7 +16,7 @@ void printAddress(){
 	{
 		if (!i2c.write(address << 1, NULL, 0)){ // 0 returned is ok
 			printf("I2C device found at address 0x%02X (0x%02X in 8-bit)\n", address, address << 1);
-			numberOfDevices++;
+			//numberOfDevices++;
 			found = true;
 		}
 	}
@@ -24,7 +24,7 @@ void printAddress(){
 		printf("No device found");
 	}
 }
-
+/*
 int getNumberOfDevices(){
 	return numberOfDevices;
-}
+}*/
